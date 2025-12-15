@@ -1,0 +1,40 @@
+Übung 2
+
+Folgende Aufgaben sollen programmiert und realisiert werden. Jede einzelne Aufgabe
+soll einzeln getestet werden können
+
+Aufgabe1:
+Erstellen Sie ein Programm zur Multiplikation von Matrizen.
+Die Multiplikation von Matrizen unterliegt einer Bedingung bezüglich der Dimensionen
+(Anzahl Spalte von Matrix 1 gleich Anzahl Zeilen von Matrix 2).
+Fangen Sie ungültige Eingaben diesbezüglich ab.
+
+Aufgabe2:
+Erstellen Sie ein Programm zur Durchführung des Gauß-Algorithmus mit Ausgabe der
+getrennten L- und R-Matrix.
+Hier muss die Eingabematrix eine quadratische Matrix sein.
+
+Aufgabe3:
+Erstellen Sie ein Programm zur Berechnung einer LR-Zerlegung nach Crout.
+Eingabe ist auch hier eine quadratische Matrix.
+
+Aufgabe4:
+Erstellen Sie ein Programm zu Berechnung der Inversen einer Matrix, realisieren Sie
+den Gauß-Jordan-Algorithmus.
+Auch hier darf nur eine quadratische Matrix verwendet werden.
+
+Aufgabe5:
+Überlegen Sie wie sie Knoten und Kanten mit Bewertung einlesen.
+Erstellen Sie ein Programm mit dem zu einem zusammenhängenden Graphen eine
+Distanz- und eine Routingmatrix erzeugt wird.
+Bemerkungen:
+Benutzen Sie das Programm der ersten Aufgabe, um eine zerlegbare Matrix für die
+zweite und dritte Aufgabe zu erzeugen, damit die LR-Zerlegung vernünftig getestet
+werden kann.
+Bei Aufgabe 5 werden einige Zellen der Matrizen zu Anfang mit unendlich belegt. Das
+wird nur als Text gehen. Im Folgenden werden Berechnungen damit durchgeführt, wobei
+einige Werte auf dieses unendlich als Text treffen.
+
+
+Abgabe:
+Ihre Programme werden am 23. Januar 2026 in der Vorlesung vorgeführt und bewertet.
