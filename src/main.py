@@ -2,9 +2,9 @@
 
 from aufgabe1_matrix_mult.matrix_multiplication import run as run_aufgabe1
 from aufgabe2_gauss.gauss_lr import run as run_aufgabe2
-from aufgabe3_crout.crout import run as run_aufgabe3
-from aufgabe4_inverse.inverse import run as run_aufgabe4
-from aufgabe5_graphen.routing import run as run_aufgabe5
+from aufgabe3_crout.crout_lr import run as run_aufgabe3
+from aufgabe4_inverse.gauss_jordan import run as run_aufgabe4
+from aufgabe5_graphen.floyd_warshall import run as run_aufgabe5
 
 def main():
     while True: # um rekursive funktionsaufrufe zu vermeiden 
