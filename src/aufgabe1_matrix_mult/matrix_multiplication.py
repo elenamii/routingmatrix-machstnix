@@ -41,12 +41,12 @@ def read_matrix (rows, cols, name):
     for i in range(rows):
         row = []
         for j in range (cols):
-            value = float(input(f"A[{i}][{j}]: "))
+            value = int(input(f"{name}[{i}][{j}]: "))
             row.append(value)
         M.append(row)
     return M
 
-def print_matirx(M):
+def print_matrix(M):
     for row in M:
         print(row)
 
