@@ -3,6 +3,8 @@
 # rows x cols
 # A (mxn) x B(nxp) = C (mxp)
 
+from utils.matrix_inout import read_matrix, print_matrix
+
 # reine rechenfunktion für Aufgabe 2-5 nutzbar
 def multiply(A, B):
     rowsA =len(A)
@@ -32,23 +34,6 @@ def multiply(A, B):
 
     return C
 
-
-
-#hilffunktion für ein und ausgabe
-def read_matrix (rows, cols, name):
-    M = []
-    print (f'Matrix {name}:')
-    for i in range(rows):
-        row = []
-        for j in range (cols):
-            value = int(input(f"{name}[{i}][{j}]: "))
-            row.append(value)
-        M.append(row)
-    return M
-
-def print_matrix(M):
-    for row in M:
-        print(row)
 
 #interaktiver modus für main.py und vorführung 
 
