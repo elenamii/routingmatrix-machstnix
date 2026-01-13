@@ -33,6 +33,25 @@ def multiply(A, B):
     return C
 
 
+
+#hilffunktion für ein und ausgabe
+def read_matrix (rows, cols, name):
+    M = []
+    print (f'Matrix {name}:')
+    for i in range(rows):
+        row = []
+        for j in range (cols):
+            value = float(input(f"A[{i}][{j}]: "))
+            row.append(value)
+        M.append(row)
+    return M
+
+def print_matirx(M):
+    for row in M:
+        print(row)
+
+#interaktiver modus für main.py und vorführung 
+
 def run():
     print("Matrixmultiplikation A x B")
     print('Geben Sie die Dimensionen der Matrizen ein:')
@@ -44,27 +63,22 @@ def run():
 
     if (colsA != rowsB):
         print ('Ungültige Dimensionen. Fehler: Anzahl Spalten von Matrix A muss gleich Anzahl Zeilen von Matrix B sein.')
-        exit()
+        return
 
-    A = []
-    print ('Matrix A:')
-    for i in range(rowsA):
-        row = []
-        for j in range (colsA):
-            row.append(int(input(f"A[{i}][{j}]: ")))
-        A.append(row)
+    A = read_matrix(rowsA, colsA, "A")
+    B = read_matrix(rowsB, colsB, "B")
 
-    B= []
-    print ('Matrix B:')
-    for i in range (rowsB):
-        row= []
-        for j in range (colsB):
-            row.append(int(input(f"B[{i}][{j}]:")))
-        B.append(row)
+    try:
+        C = multiply(A, B)
+    except ValueError as e:
+        print(e)
+        return
+    
+    print("\nErgebnis C = A × B:")
+    print_matrix(C)
+    
 
+#für direkten start in der datei'
+if __name__ =="__main__":
+    run()
 
-
-
-    print("Ergebnis-Matrix:")
-    for row in C:
-        print(row)
