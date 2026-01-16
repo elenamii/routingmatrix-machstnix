@@ -8,7 +8,7 @@ from aufgabe5_graphen.floyd_warshall import run as run_aufgabe5
 
 def main():
     while True: # um rekursive funktionsaufrufe zu vermeiden 
-        print("\n===== ÜBUNG 2 – Lineare Algebra =====")
+        print("\n Mathe Abgabe 2")
         print("1 – Matrixmultiplikation")
         print("2 – Gauß (L- und R-Matrix)")
         print("3 – LR-Zerlegung nach Crout")
