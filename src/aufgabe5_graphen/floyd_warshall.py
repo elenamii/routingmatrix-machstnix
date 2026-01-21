@@ -4,7 +4,7 @@ from utils.matrix_inout import print_matrix
 def floyd_warshall(G):
     n = len(G)
     D = [[float("inf") if G[i][j] == "∞" else G[i][j] for j in range(n)] for i in range(n)]
-    R = [[j if G[i][j] != "∞" else None for j in range(n)] for i in range(n)]
+    R = [["-" if (i == j or G[i][j] == "∞") else j for j in range(n)] for i in range(n)]
 
     for k in range(n):
         for i in range(n):
@@ -22,7 +22,7 @@ def run():
     print("Distanzmatrix:")
     print_matrix(D)
     print("Routingmatrix:")
-    print(R)
+    print_matrix(R)
 
 
 if __name__ == "__main__":

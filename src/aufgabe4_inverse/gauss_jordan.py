@@ -11,6 +11,8 @@ def inverse(A):
 
     for i in range(n):
         pivot = M[i][i]
+        if pivot == 0:
+            return None
         for j in range(2*n):
             M[i][j] /= pivot
         for k in range(n):
@@ -26,9 +28,12 @@ def run():
     n = int(input("Dimension: "))
     A = read_square_matrix(n, "A")
     inv = inverse(A)
-    print("Inverse:")
-    print_matrix(inv)
-
+    
+    if inv is None:
+        print("Die Matrix ist nicht invertierbar.")
+    else:
+        print("Inverse:")
+        print_matrix(inv)
 
 if __name__ == "__main__":
     run()

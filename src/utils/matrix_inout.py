@@ -15,4 +15,14 @@ def read_square_matrix(n, name):
 
 def print_matrix(M):
     for row in M:
-        print(["{:.2f}".format(x) for x in row])
+        out = []
+        for x in row:
+            if isinstance(x, (int, float)):
+                if x == float("inf"):
+                    out.append("∞")
+                else:
+                    out.append("{:.2f}".format(x))
+            else:
+                out.append(str(x))
+        print(out)
+
