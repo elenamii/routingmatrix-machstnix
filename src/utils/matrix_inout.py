@@ -4,7 +4,7 @@ def read_matrix(rows, cols, name):
     for i in range(rows):
         row = []
         for j in range(cols):
-            row.append(int(input(f"{name}[{i}][{j}]: ")))
+            row.append(float(input(f"{name}[{i}][{j}]: ")))
         M.append(row)
     return M
 
